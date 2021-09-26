@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br" >
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>AluraFlix</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - AluraFlix</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Aluraflix  </h1>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    </div>
 
-<body>
-<div class="container">
-  <h1 class="page-title">
-    Aluraflix
-  </h1>
-  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-</div>
+    <section>
+      <label for="filme" class="subtitulo-pagina">Qual o nome do filme?</label><br>
+      <input type="text" id="filme" placeholder="Nome do Filme"><br>
+      <label for="posterParaAdicionar" class="subtitulo-pagina">Se deseja adicionar um filme insira o link do poster:</label><br>
+      <input type="text" id="posterParaAdicionar" placeholder="link.jpg"><br>
+      <button type="submit" onclick="adicionarFilme()">Adicionar Filme</button>
+      <button type="submit" onclick="mostrarLista()">Mostrar Lista</button>
+      <button type="submit" onclick="removeFilme()">Remover Filme</button>
+    </section>
 
-<section>
-  <label for="filme" class="subtitulo-pagina">Qual o nome do filme?</label><br>
-  <input type="text" id="filme" placeholder="Nome do Filme"><br>
-  <label for="posterParaAdicionar" class="subtitulo-pagina">Se deseja adicionar um filme insira o link do poster:</label><br>
-  <input type="text" id="posterParaAdicionar" placeholder="link.jpg"><br>
-  <button type="submit" onclick="adicionarFilme()">Adicionar Filme</button>
-  <button type="submit" onclick="mostrarLista()">Mostrar Lista</button>
-  <button type="submit" onclick="removeFilme()">Remover Filme</button>
-</section>
+    <div class="resultado-caixa">
+      <h2 id="resultadoAdicionarFilme"></h2>
+    </div>
 
-<div class="resultado-caixa">
-  <h2 id="resultadoAdicionarFilme"></h2>
-</div>
+    <ul id="listaFilmes"></ul>
 
-<ul id="listaFilmes"></ul>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
 
-<a href="https://alura.com.br/" target="_blank">
-  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-</a>
-
-<script src="./script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
